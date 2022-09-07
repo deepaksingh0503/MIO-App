@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:backgroundTint="#FFFFFF">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+
+            <ImageButton
+                android:id="@+id/btn_calculator"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="32dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/calculator_logo"
+                app:layout_constraintEnd_toStartOf="@+id/btn_note"
+                app:layout_constraintHorizontal_bias="0.369"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/btn_camera"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="32dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/camera_logo"
+                app:layout_constraintEnd_toStartOf="@+id/btn_torch"
+                app:layout_constraintHorizontal_bias="0.369"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_clock" />
+
+            <ImageButton
+                android:id="@+id/btn_calender"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="28dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/calender_logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.888"
+                app:layout_constraintStart_toEndOf="@id/btn_clock"
+                app:layout_constraintTop_toBottomOf="@+id/btn_note" />
+
+
+            <ImageButton
+                android:id="@+id/btn_clock"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="28dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/clock_logo"
+                app:layout_constraintEnd_toStartOf="@+id/btn_calender"
+                app:layout_constraintHorizontal_bias="0.369"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_calculator" />
+
+            <ImageButton
+                android:id="@+id/btn_note"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="32dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/note_logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.888"
+                app:layout_constraintStart_toEndOf="@id/btn_calculator"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/btn_torch"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="32dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/torch_logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.888"
+                app:layout_constraintStart_toEndOf="@id/btn_camera"
+                app:layout_constraintTop_toBottomOf="@+id/btn_calender" />
+
+
+            <ImageButton
+                android:id="@+id/btn_cumpas"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="32dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cumpas_logo"
+                app:layout_constraintEnd_toStartOf="@+id/btn_tictactoe"
+                app:layout_constraintHorizontal_bias="0.369"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_camera" />
+
+            <ImageButton
+                android:id="@+id/btn_tictactoe"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="32dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/tic_tac_toe_logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.888"
+                app:layout_constraintStart_toEndOf="@id/btn_cumpas"
+                app:layout_constraintTop_toBottomOf="@+id/btn_torch" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</LinearLayout>
